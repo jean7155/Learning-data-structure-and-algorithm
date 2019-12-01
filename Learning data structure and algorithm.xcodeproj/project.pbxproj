@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0468897D2387FBB000451378 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0468897C2387FBB000451378 /* main.cpp */; };
+		049CBACB23932E32003DF2B1 /* SparseArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049CBAC923932E32003DF2B1 /* SparseArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		046889792387FBB000451378 /* Learning data structure and algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learning data structure and algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0468897C2387FBB000451378 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		049CBAC923932E32003DF2B1 /* SparseArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SparseArray.cpp; sourceTree = "<group>"; };
+		049CBACA23932E32003DF2B1 /* SparseArray.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SparseArray.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				0468897C2387FBB000451378 /* main.cpp */,
+				049CBAC923932E32003DF2B1 /* SparseArray.cpp */,
+				049CBACA23932E32003DF2B1 /* SparseArray.hpp */,
 			);
 			path = "Learning data structure and algorithm";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0468897D2387FBB000451378 /* main.cpp in Sources */,
+				049CBACB23932E32003DF2B1 /* SparseArray.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
