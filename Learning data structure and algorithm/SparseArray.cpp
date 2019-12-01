@@ -19,8 +19,8 @@ SparseArray::~SparseArray()
         delete mArray;
     }
 }
-//将二维数组转为稀疏数组
-int SparseArray::createFrom(int* scr,int row,int col)
+//获得有效数据个数。
+int SparseArray::getValueNum(int* scr,int row,int col)
 {
     int sum = 0;
     for(int i = 0; i < row; i++) {
@@ -31,13 +31,24 @@ int SparseArray::createFrom(int* scr,int row,int col)
             }
         }
     }
+    return sum;
+}
+//初始化动态数组。
+void SparseArray::init(int num)
+{
+    mArray = new int*[3];
+    for (int i=0; i<num+1; i++) {
+        mArray[i] = new int[3]();
+    }
+}
+//将数组转为稀疏数组
+int SparseArray::createFrom(int* scr,int row,int col)
+{
+    int sum = getValueNum(scr, row, col);
     std::cout << "sum = "<<sum <<std::endl;
 
     //2.创建对应的稀疏数组
-    mArray = new int*[3];
-    for (int i=0; i<sum+1; i++) {
-        mArray[i] = new int[3]();
-    }
+    init(sum);
     
     //3.给稀疏数组赋值
     mArray[0][0] = 11;
@@ -69,9 +80,9 @@ void SparseArray::printSparseArray()
 }
 int SparseArray::toArray(int* &des,int &row,int &col)
 {
-    if (des!=nullptr) {
+    if (des!=nullptr)
         return 0;
-    }
+    
     //将稀疏数组--->>恢复成原始的二维数组
     //1.先读取稀疏数组的第一行，根据第一行的数据，创建原始的二维数组
     row = mArray[0][0];

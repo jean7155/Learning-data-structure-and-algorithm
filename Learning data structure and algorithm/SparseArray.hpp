@@ -16,10 +16,14 @@ class SparseArray
 public:
     SparseArray();
     ~SparseArray();
-    int createFrom(int* src,int row,int col);
+    int getValueNum(int* scr,int row,int col);
+    
+    int createFrom(int* scr,int row,int col);
     void printSparseArray();
     int toArray(int* &des,int &row,int &col);
 private:
+    void init(int num);
+    
     int** mArray;
     int mSum;
 };
