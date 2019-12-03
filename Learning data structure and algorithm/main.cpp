@@ -64,7 +64,21 @@ void testSparseArray(){
 
 
 
-
+int * getData( )
+{
+    static int  r[10];
+    for (int i = 0; i < 10; ++i)
+    {
+        r[i] = i;
+    }
+    
+    return r;
+}
+#include "DyArray.h"
 int main(int argc, const char * argv[]) {
-    testSparseArray();
+  //  testSparseArray();
+    
+    threeDimensionalArray();
+    
+    return 0;
 }

@@ -24,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04189ED12396051B00B6ED3A /* DyArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyArray.h; sourceTree = "<group>"; };
 		046889792387FBB000451378 /* Learning data structure and algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Learning data structure and algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0468897C2387FBB000451378 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		049CBAC923932E32003DF2B1 /* SparseArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SparseArray.cpp; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 				0468897C2387FBB000451378 /* main.cpp */,
 				049CBAC923932E32003DF2B1 /* SparseArray.cpp */,
 				049CBACA23932E32003DF2B1 /* SparseArray.hpp */,
+				04189ED12396051B00B6ED3A /* DyArray.h */,
 			);
 			path = "Learning data structure and algorithm";
 			sourceTree = "<group>";
